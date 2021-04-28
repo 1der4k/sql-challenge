@@ -19,8 +19,8 @@ CREATE TABLE employee (
 	);
 
 CREATE TABLE dept_employee (
-    dept_no VARCHAR(5) REFERENCES department (dept_no),
     emp_no INT REFERENCES employee (emp_no),
+	dept_no VARCHAR(5) REFERENCES department (dept_no),    
 	PRIMARY KEY(dept_no,emp_no)
 	);
 
@@ -35,4 +35,4 @@ CREATE TABLE dept_manager (
 	PRIMARY KEY (dept_no,emp_no)
 	)	
 
-SELECT * FROM employee_dept
+SELECT * FROM dept_employee
