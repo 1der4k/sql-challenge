@@ -11,7 +11,7 @@ CREATE TABLE title (
 CREATE TABLE employee (
     emp_no INT PRIMARY KEY NOT NULL,
     emp_title_id VARCHAR(5) REFERENCES title (title_id),
-    birth_date DATE NOT NULL,
+    birth_date VARCHAR(25) NOT NULL,
     first_name VARCHAR NOT NULL,
     last_name VARCHAR NOT NULL,
     sex VARCHAR(5) NOT NULL,
@@ -34,5 +34,3 @@ CREATE TABLE dept_manager (
 	emp_no INT REFERENCES employee (emp_no),
 	PRIMARY KEY (dept_no,emp_no)
 	)	
-
-SELECT * FROM dept_employee
