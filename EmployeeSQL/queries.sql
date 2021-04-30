@@ -3,4 +3,4 @@ FROM employee
 INNER JOIN salary ON employee.emp_no=salary.emp_no
 
 SELECT first_name,last_name,hire_date FROM employee
-WHERE hire_date LIKE '1986%'
+WHERE hire_date LIKE '%1986'
