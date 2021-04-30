@@ -14,3 +14,11 @@ ON dept_manager.dept_no=department.dept_no
 LEFT JOIN employee
 ON dept_manager.emp_no=employee.emp_no
 
+
+
+SELECT employee.emp_no,employee.last_name,employee.first_name,department.dept_name
+FROM department
+JOIN dept_employee
+ON department.dept_no=dept_employee.dept_no
+JOIN employee
+ON dept_employee.emp_no=employee.emp_no
