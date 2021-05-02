@@ -18,7 +18,7 @@ I created six tables corresponding to one of the six CSV files. These tables' na
 
 ## Data Analysis
 
-The specific information requested by my employer was as follows:
+### The specific information requested by my employer was as follows:
 
 1) List the following details of each employee: employee number, last name, first name, sex, and salary.
 
